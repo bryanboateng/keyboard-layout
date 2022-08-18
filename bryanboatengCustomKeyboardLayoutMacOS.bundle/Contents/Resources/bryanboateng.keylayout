@@ -1,6 +1,6 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!--Last edited by Ukelele version 359 on 2022-08-18 at 23:31 (CEST)-->
+<!--Last edited by Ukelele version 359 on 2022-08-18 at 23:45 (CEST)-->
 <keyboard group="126" id="-27845" name="bryanboateng" maxout="3">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="commonModifiers"/>
@@ -55,7 +55,7 @@
             <key code="7" action="x"/>
             <key code="8" action="c"/>
             <key code="9" action="v"/>
-            <key code="10" output="§"/>
+            <key code="10" output="`"/>
             <key code="11" action="b"/>
             <!-- added -->
             <key code="12" action="q"/>
@@ -98,11 +98,13 @@
             <key code="47" output="."/>
             <key code="48" output="&#x0009;"/>
             <key code="49" action=" "/>
-            <key code="50" output="`"/>
+            <key code="50" action="`"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
             <key code="53" output="&#x001B;"/>
             <!-- gap, 54 through 64 -->
+            <key code="55" output=""/>
+            <key code="56" output=""/>
             <key code="64" output="&#x0010;"/>
             <key code="65" output="."/>
             <key code="66" output="&#x001D;"/>
@@ -179,7 +181,7 @@
             <key code="7" action="X"/>
             <key code="8" action="C"/>
             <key code="9" action="V"/>
-            <key code="10" output="±"/>
+            <key code="10" output="~"/>
             <key code="11" action="B"/>
             <!-- added -->
             <key code="12" action="Q"/>
@@ -222,7 +224,7 @@
             <key code="47" output="&#x003E;"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" action=" "/>
-            <key code="50" output="~"/>
+            <key code="50" output="ß"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
             <key code="53" output="&#x001B;"/>
@@ -1771,6 +1773,9 @@
         <action id="^">
             <when state="none" output="^"/>
             <when state="specials" output="Ƅ"/>
+        </action>
+        <action id="`">
+            <when state="none" next="diaeresis"/>
         </action>
         <action id="a">
             <when state="none" output="a"/>
