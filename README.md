@@ -1,5 +1,65 @@
 # Keyboard Layout
 
+## Linux
+
+### Step 1: Create a Symbolic Link
+
+Open a terminal and create a symbolic link to the XKB symbols directory. Replace `/path/to/bryanboatengCustomKeyboardLayoutLinux` with the actual path of your file.
+
+```bash
+sudo ln -s /path/to/bryanboatengCustomKeyboardLayoutLinux /usr/share/X11/xkb/symbols/bryanboatengCustomKeyboardLayoutLinux
+```
+
+### Step 2: Add Layout to `evdev.lst` and `base.lst`
+
+Open `evdev.lst` and add your layout under the `! layout` section.
+
+```bash
+sudo nvim /usr/share/X11/xkb/rules/evdev.lst
+```
+
+Add the following line:
+
+```text
+bryanboatengCustomKeyboardLayoutLinux        Bryan Boateng Custom Keyboard Layout Linux
+```
+
+Repeat these steps for `base.lst`:
+
+```bash
+sudo nvim /usr/share/X11/xkb/rules/base.lst
+```
+
+### Step 3: Add Layout to evdev.xml
+
+Open `evdev.xml` and add your layout inside the `<layoutList>` tag.
+
+```bash
+sudo nvim /usr/share/X11/xkb/rules/evdev.xml
+```
+
+Add the following entry:
+
+```xml
+<layout>
+  <configItem>
+    <name>bryanboatengCustomKeyboardLayoutLinux</name>
+    <shortDescription>en</shortDescription>
+    <description>Bryan Boateng Custom Keyboard Layout Linux</description>
+    <languageList>
+      <iso639Id>eng</iso639Id>
+    </languageList>
+  </configItem>
+  <variantList/>
+</layout>
+```
+
+### Step 4: Restart Your Session
+
+To apply these changes, you need to restart your session. You can do this by logging out and logging back in, or by rebooting your system.
+
+The custom layout should now be available in the keyboard layout settings.
+
 ## Windows
 
 ### Installation
