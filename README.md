@@ -63,6 +63,7 @@ The custom layout should now be available in the keyboard layout settings.
 ## Windows
 
 ### Installation
+
 1. Download and install Microsoft Keyboard Layout Creator (MSKLC)
 1. Open "File > Load Source File..."
 1. Choose the .klc file from this repository
@@ -73,6 +74,7 @@ The custom layout should now be available in the keyboard layout settings.
 1. Restart your device
 
 ### Uninstallation
+
 1. Open Registry Editor
 1. Navigate to "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts"
 1. Delete the entry corresponding to the layout (usually the last entry of the list)
@@ -82,14 +84,15 @@ The custom layout should now be available in the keyboard layout settings.
 1. Restart your device
 
 ### How this Layout was created in MSKLC
+
 1. Open "File > Load Existing Keyboard"
 1. Choose "US"
 1. Open "Project > Properties"
 1. Set Properties to the following
-    - Name: bryan
-    - Description: bryanboateng Custom Keyboard Layout
-    - Copyright: (c) *&lt;current year&gt;* bryanboateng
-    - Language: English (United States)
+   - Name: bryan
+   - Description: bryanboateng Custom Keyboard Layout
+   - Copyright: (c) _&lt;current year&gt;_ bryanboateng
+   - Language: English (United States)
 1. Click "Ok"
 1. Right-click the key between "left shift" and "Z" (VK_OEM_102)
 1. Choose "Properties for VK_OEM_102 in all shift states"
@@ -101,19 +104,19 @@ The custom layout should now be available in the keyboard layout settings.
 1. Fill the table with the following values
 
 | Base (code point) | Composite (code point) | Base | Composite |
-|-------------------|------------------------|------|-----------|
-| U+0061            | U+00e4                 | a    | ä         |
-| U+0065            | U+00eb                 | e    | ë         |
-| U+006f            | U+00f6                 | o    | ö         |
-| U+0079            | U+00ff                 | y    | ÿ         |
-| U+0075            | U+00fc                 | u    | ü         |
-| U+0069            | U+00ef                 | i    | ï         |
-| U+0041            | U+00c4                 | A    | Ä         |
-| U+0045            | U+00cb                 | E    | Ë         |
-| U+004f            | U+00d6                 | O    | Ö         |
+| ----------------- | ---------------------- | ---- | --------- |
+| U+0061            | U+00e4                 | a    | ï¿½         |
+| U+0065            | U+00eb                 | e    | ï¿½         |
+| U+006f            | U+00f6                 | o    | ï¿½         |
+| U+0079            | U+00ff                 | y    | ï¿½         |
+| U+0075            | U+00fc                 | u    | ï¿½         |
+| U+0069            | U+00ef                 | i    | ï¿½         |
+| U+0041            | U+00c4                 | A    | ï¿½         |
+| U+0045            | U+00cb                 | E    | ï¿½         |
+| U+004f            | U+00d6                 | O    | ï¿½         |
 | U+0059            | U+0178                 | Y    | ?         |
-| U+0055            | U+00dc                 | U    | Ü         |
-| U+0049            | U+00cf                 | I    | Ï         |
-| U+0020            | U+00a8                 |      | ¨         |
+| U+0055            | U+00dc                 | U    | ï¿½         |
+| U+0049            | U+00cf                 | I    | ï¿½         |
+| U+0020            | U+00a8                 |      | ï¿½         |
 
 14. Click "Ok"
